@@ -1,2 +1,3 @@
 Assumptions taken:
 - Not creating the back faces of the procedural meshes, as most modern engines (Unity included), allow materials to render in both front and back faces, this is more eficient for the engine and reduce the risk of z-fighting
+- On task 2, most of the code to generate the sphere is the same as to generate the half sphere of task one. I choose to duplicate for velocity, but this could be generalised (TODO if i have time)

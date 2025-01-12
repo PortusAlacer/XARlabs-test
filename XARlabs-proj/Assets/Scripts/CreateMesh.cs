@@ -5,7 +5,8 @@ public class CreateMesh : MonoBehaviour
 {
     enum MeshType
     {
-        SphereCone
+        SphereCone,
+        Sphere
     }
     
     [SerializeField] private GameObject m_ObjectAssigned;
@@ -29,6 +30,9 @@ public class CreateMesh : MonoBehaviour
         {
             case MeshType.SphereCone:
                 proceduralMesh = new SphereCone(m_Horizontalivisions, m_VerticalDivisions, m_Size, m_Radius);
+                break;
+            case MeshType.Sphere:
+                proceduralMesh = new Sphere(m_Horizontalivisions, m_VerticalDivisions, m_Radius);
                 break;
             default:
                 Debug.Assert(true, $"Procedural Mesh Creator Error: Mesh Type {m_MeshType} is not supported.");
