@@ -1,0 +1,2 @@
+Assumptions taken:
+- Not creating the back faces of the procedural meshes, as most modern engines (Unity included), allow materials to render in both front and back faces, this is more eficient for the engine and reduce the risk of z-fighting
