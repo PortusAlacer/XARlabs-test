@@ -39,7 +39,7 @@ public class CreateMesh : MonoBehaviour
                 break;
         }
         
-        m_ObjectAssigned.AddComponent<MeshFilter>().sharedMesh = proceduralMesh.Mesh;
-        m_ObjectAssigned.AddComponent<MeshRenderer>().material = m_Material;
+        m_ObjectAssigned.GetComponent<MeshFilter>().sharedMesh = proceduralMesh.Mesh;
+        m_ObjectAssigned.GetComponent<MeshRenderer>().material = m_Material;
     }
 }
